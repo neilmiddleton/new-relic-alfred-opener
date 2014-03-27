@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.neilmiddleton.newrelic</string>
+	<key>connections</key>
+	<dict>
+		<key>FDD4B492-F040-4656-959A-4A659A35566E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EEBF2B4E-1258-436F-9C02-202C0EAE33F4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Neil Middleton</string>
+	<key>description</key>
+	<string>Opens New Relic for a given customer application</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>New Relic opener</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>36</integer>
+				<key>script</key>
+				<string>heroku sudo addons:open newrelic -a {query}</string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>EEBF2B4E-1258-436F-9C02-202C0EAE33F4</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>nr</string>
+				<key>subtext</key>
+				<string>Open New Relic for app {query}</string>
+				<key>text</key>
+				<string>New Relic</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>FDD4B492-F040-4656-959A-4A659A35566E</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>EEBF2B4E-1258-436F-9C02-202C0EAE33F4</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>FDD4B492-F040-4656-959A-4A659A35566E</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://www.neilmiddleton.com</string>
+</dict>
+</plist>
